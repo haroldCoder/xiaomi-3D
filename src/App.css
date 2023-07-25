@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Karla&display=swap');
 
 body{
-  background-color: #000;
+  
   font-family: 'Karla', sans-serif;
 }
 .nav-wrapper{
@@ -31,6 +31,8 @@ img{
   flex-direction: column;
   text-align: center;
   padding-top: 60px;
+  background-color: #000;
+  padding-bottom: 5%;
 }
 
 .title{
@@ -46,6 +48,18 @@ img{
   -webkit-background-clip: text; 
   color: transparent; 
   background-image: linear-gradient(182deg,#ffffff 10%, #b43900 90%);
+  font-size: 55px;
+  font-family: sans-serif;
+  letter-spacing: -2px;
+  margin: 20px 0;
+}
+
+.subtitle2{
+  font-weight: bolder;
+  background-clip: text; 
+  -webkit-background-clip: text; 
+  color: transparent; 
+  background-image: linear-gradient(212deg,#ffa14a 10%, #ff5100 90%);
   font-size: 55px;
   font-family: sans-serif;
   letter-spacing: -2px;
@@ -72,6 +86,7 @@ img{
   font-family: sans-serif;
 }
 
+
 .button{
   background: #7c7c7c;
   color: #fff;
@@ -90,4 +105,23 @@ img{
   font-size: 20px;
   font-weight: 300;
   font-family: 'Karla', sans-serif;
+}
+
+.xiaomi-img{
+  width: 20vw;
+  height: 60vh;
+}
+
+.sound{
+  background: #FFF;
+  display: flex;
+  justify-content: center;
+  padding: 10% 0;
+}
+
+.display{
+  display: flex;
+  justify-content: center;
+  padding: 10% 0;
+  background: #000;
 }

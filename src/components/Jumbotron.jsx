@@ -1,5 +1,5 @@
 import React from 'react'
-import xiaomi from '../assets/xiaomi.png'
+import xiaomi from '../assets/xiaomi-img.jpg'
 
 export default function Jumbotron() {
   return (
@@ -18,7 +18,7 @@ export default function Jumbotron() {
                 <a className='link'>Learn more</a>
             </li>
         </ul>
-        <img className='xiaomi-img' src="" alt="Xiaomi redmi 10" />
+        {/* <img className='xiaomi-img' src={xiaomi} alt="Xiaomi redmi 10" /> */}
     </div>
   )
 }
