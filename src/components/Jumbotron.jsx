@@ -1,5 +1,11 @@
 import React from 'react'
-import xiaomi from '../assets/xiaomi-img.jpg'
+import { Canvas } from "@react-three/fiber";
+import { useGLTF, Stage, PresentationControls } from "@react-three/drei";
+
+function Model(props) {
+    const { scene } = useGLTF("src/assets/animations/scene0/scene.gltf");
+    return <primitive object={scene} {...props} />
+}
 
 export default function Jumbotron() {
   return (
@@ -18,7 +24,14 @@ export default function Jumbotron() {
                 <a className='link'>Learn more</a>
             </li>
         </ul>
-        {/* <img className='xiaomi-img' src={xiaomi} alt="Xiaomi redmi 10" /> */}
+        <Canvas dpr={[1,2]} shadows camera={{ fov: 45 }} style={{width: "30vw", height: "50vh"}}>
+            <color attach="background" args={["#000"]} />
+            <PresentationControls speed={1.5} global zoom={.5} polar={[-0.1, Math.PI / 4]}>
+                <Stage environment={"sunset"}>
+                <Model scale={0.01} rotation-y={2} />
+                </Stage>
+            </PresentationControls>
+        </Canvas>
     </div>
   )
 }
