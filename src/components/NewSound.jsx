@@ -15,7 +15,7 @@ function NewSound() {
                 <p className='title'>New Sound System</p>
                 <h2 className='subtitle2'>Feel the base.</h2>
                 <span className='description'>
-                    From $20/mo. for 24 mo. or 600 before trade-in
+                    From $20/mo. for 24 mo. or 400 before trade-in
                 </span>
                 <ul className="links">
                     <li>
