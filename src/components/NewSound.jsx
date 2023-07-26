@@ -3,7 +3,7 @@ import { Canvas } from "@react-three/fiber";
 import { useGLTF, Stage, PresentationControls } from "@react-three/drei";
 
 function Model(props) {
-    const { scene } = useGLTF("src/assets/animations/scene1/scene.gltf");
+    const { scene } = useGLTF("/assets/animations/scene1/scene.gltf");
     return <primitive object={scene} {...props} />
 }
 
@@ -28,7 +28,6 @@ function NewSound() {
             </section>
             <section>
             <Canvas dpr={[1,2]} shadows camera={{ fov: 45 }} style={{width: "30vw", height: "50vh"}}>
-            <color attach="background" args={["transparent"]} />
                 <PresentationControls speed={1.5} global zoom={.5} polar={[-0.1, Math.PI / 4]}>
                     <Stage environment={"sunset"}>
                     <Model scale={0.01} rotation-y={2} />
